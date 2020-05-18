@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/histoire.js"></script>
+</head>
+<body id="hehehe">
+	<div id="mdrrr">
+		<div id="entier">
+			
+			<div class="0" id="appli">
+				<img id="image" src="img/woodstock_apocalypse_cropped.jpg"/>
+				<p id="histoire" class="0">Leur rumeur bien lancée, ils veulent en tirer des bénéfices</p>
+				<p id="question">Que faire ?</p>
+				<p onclick="histoire('d',1)" id="question1" class="question">1. Voler un camion</p>
+				<p onclick="histoire('d',2)" id="question2" class="question">2. Voler une voiture de sport</p>
+				<p id="end" class="0"></p>
+				<div id="controleur">
+					<div id="retour" class="enabled" onclick="histoire('d',-1)" style=" color:#ecf0f1; opacity:0.4;"><img id="imgretour" src="img/fleche_annuler_grise.png" alt="fleche retour"/><p>Annuler <span style="font-size:0.8em;" id="joker" class="1">(joker disponible)</span></p></div>
+					<a id="recommencer" style="opacity:0.8" href="accueil.html"><img src="img/fleche_restart.png"/ alt="bouton recommencer"><span>Retour à l'accueil</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

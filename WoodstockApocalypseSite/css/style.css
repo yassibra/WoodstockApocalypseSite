@@ -1,0 +1,394 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-image: url("../img/woodstock_flou.jpg");
+	background-size:100%;
+	font-size:1em;
+}
+
+@font-face {
+	font-family: "Billionnaire";
+	src: url("../font/BillionaireMediumGrunge.otf") format("opentype"),
+        url("../font/BillionaireMediumGrunge.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Flowers";
+	src: url("../font/Flowers Kingdom.ttf") format("truetype");
+}
+
+
+#retourIndex{
+	float:left;
+	background-color: black;
+	color: white; 
+	text-decoration: none;
+	margin-left:7%;
+	margin-top:1%;
+	width:10%;
+	padding:20px;
+	text-align: center;
+}
+
+#retourIndex:hover{
+	background-color:silver;
+	color:black;
+	font-weight: bold;
+}
+
+#mdrr{
+	padding:1%;
+	padding-top: 10%;
+}
+
+#mdrrr{
+	padding:1%;
+	padding-top: 3%;
+}
+
+#titre{
+	color: white;
+	text-transform: uppercase;
+	line-height: 2.2em;
+	letter-spacing: 0.125rem;
+	font-size: 1.3em;
+	font-family:'Flowers','Billionnaire' ,serif;
+	margin-bottom:10%;
+	position:relative;
+	top:-20%;
+	margin-bottom:4%;
+	margin-top:4%;
+	padding:0;
+}
+
+#boutons img{
+	width:30px;
+}
+
+#parag{
+	font-size: 1.02em;
+	width: 100%;
+	height:175px;
+	margin-bottom:20px;
+}
+
+#entier{
+	color: white;
+	background-color: grey;/*#2D241E;*/
+	width:50%;
+	margin:auto;
+	display: block;
+	padding:20px;
+	border-radius:20px;
+}
+
+#divIndex{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	
+}
+
+#entier > a{
+	text-decoration:none;
+}
+
+#divIndex > h1{
+	text-transform: uppercase;
+}
+
+img{
+	margin: 0px;
+	padding: 0px;
+}
+p{
+	margin: 0px;
+}
+
+#iss{
+	display: block;
+	text-align: center;
+	background-color: silver;
+	width: 50%;
+	margin: auto;
+	padding-right: 20px;
+	padding-left:20px;
+}
+
+.question:hover{
+	color: orange;
+}
+
+#ssou{
+	display: inline;
+	padding: 20px 40px 20px 40px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 90px;
+}
+#pHistoire{
+	margin-top:10px;
+	text-align: center;
+	display: inline-block;
+	width:90%;
+	height:120px;
+}
+
+#b{
+	background-color: black;
+	background-image: url("img/mort1.jpg");
+	display:inline-block;
+}
+
+#ssou{
+	display: block;
+	margin:5px;
+	padding:7px;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+#tableOKLM{
+	position: relative;
+	top:-4.5px;
+}
+
+tr{
+	margin:0;
+	padding:0;
+}
+
+td{
+	margin:0;
+	padding:0;
+}
+
+.group{
+	overflow:hidden;
+}
+
+.group:hover{
+	filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    -ms-filter: brightness(120%);
+}
+
+.groupNonHover{
+	overflow:hidden;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+
+.imggg{
+	width:100%;
+	border:2px black solid;
+}
+
+.imggg:hover{
+	/*border: 5px solid orange;*/
+}
+
+#groupe1{
+	width:51.5%;
+}
+
+#groupe2{
+	width:49.5%;
+}
+
+#groupe3{
+	width:32.2%;
+}
+
+#groupe4{
+	width:67.8%;
+}
+
+
+#crane{
+	display:inline-block;
+}
+
+#message{
+	display:inline-block;
+}
+
+
+
+/**/
+#hehe{
+	display:block;
+}
+
+#hihi{
+	display:block;
+}
+
+.lien_pls{
+	width: 7%;
+	padding: 5px;
+	cursor:pointer;
+}
+
+.lien_pls_inac{
+	width: 7%;
+	padding: 5px;
+}
+
+.lien_pls:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#give{
+
+	padding: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2D241E;
+	background-color: #E3A300;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+a{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#demarre{
+	/*font-family: 'Arial', serif;*/
+	margin-top: 7%;
+	padding:10px;
+	color: white;/*#E3A300;*/
+	text-transform: uppercase;
+	font-size:1.35em;
+	text-align: center;
+	border: 4px solid white;/*#E3A300;*/
+	width:350px;
+	border-radius:7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#demarre:hover{
+	box-shadow: inset 0 0 0 2px white;/*#e3b600;*/
+	font-weight: bold;
+}
+
+#controleur img{
+	width: 35px;
+}
+
+
+#retour p{
+	display:inline;
+	
+	max-width:20px;
+	position:relative;
+	top:-13px;
+	padding-left:10px;
+	margin:auto;
+}
+
+#recommencer{
+	display:inline;
+	max-width:20px;
+	
+	color:black;
+	margin:auto;
+	text-decoration: none;
+}
+
+#recommencer span{
+	position:relative;
+	top:-13px;
+	padding-left:10px;
+	max-width:20px;
+}
+
+#appli{
+	width:100%;
+}
+
+#image{
+	width:100%;
+	margin:auto;
+}
+
+#histoire{
+	height:120px;
+	margin-top:20px;
+	min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
+
+#question{
+	text-align: center;
+	font-weight: bold;
+	margin-top : 10px;
+	margin-bottom: 20px;
+}
+
+.question{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.question:hover{
+	color:#34495e;
+}
+
+#controleur{
+	margin-top:20px;
+}
+
+@media (max-width: 1200px){
+	#parag{
+		height:200px;
+	}
+}
+
+@media all and (max-height: 800px){
+	#mdrr{
+		padding:1%;
+	}
+	#mdrrr{
+		padding:1%;
+	}
+}
+
+@media all and (max-width: 750px){
+	#retourIndex{
+		width:15%;
+		padding:1px;
+		margin:0;
+		text-align: center;
+		font-size:0.8em;
+	}
+
+
+	#titre{
+		font-size: 1em;
+	}
+
+	#entier{
+		width:70%;
+	}
+
+	#parag{
+		font-size: 0.9em;
+		height: 250px;
+		vertical-align: center;
+	}
+
+	#demarre{
+		font-size: 0.9em;
+		width: 90%;
+		margin:0;
+	}
+
+}

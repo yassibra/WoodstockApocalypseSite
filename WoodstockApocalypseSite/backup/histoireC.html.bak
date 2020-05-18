@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/histoire.js"></script>
+</head>
+<body id="hehehe">
+	<div id="mdrr">
+		<div id="entier">
+			<div class="-1" id="appli">
+				<img id="image" src="img/woodstock_foule2_cropped.jpg"/>
+				<p id="histoire">Ils se réveillent et voient un mouvement de panique</p>
+				<p onclick="histoire('c',1)" id="question1">1. Le couple continue de se reposer</p>
+				<p onclick="histoire('c',2)" id="question2">2. Le couple part en voiture</p>
+				<p id="end"></p>
+				<p id="retour" onclick="histoire('c',-1)" >RETOUR</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

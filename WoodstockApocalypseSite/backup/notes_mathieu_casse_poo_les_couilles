@@ -1,0 +1,48 @@
+named.conf.local:
+
+
+zone "hehe"{
+        type master;
+        file "/etc/bind/named.hehe";
+};
+
+zone "0.0.0.0.0.0.0.0.0.e.f.f.3.ip6.arpa"{
+        type master;
+        file "/etc/bind/named.hehe.rev";
+};
+
+
+
+named.hehe:
+
+
+
+@ IN SOA dns.hehe. root.dns.hehe. (
+        2019051601 ; serial
+        28800 ; refresh
+        14400 ; retry
+        3600000 ; expire
+        86400 ; default_ttl
+)
+
+@ IN NS dns.hehe.
+
+dns IN AAAA 3ffe::1:204:6ff:fe42:c608
+routeur IN AAAA 3ffe::120:204:6ff:fe12:ca
+
+
+named.hehe.rev:
+
+@ IN SOA dns.hehe. root.dns.hehe. (
+        2014051601 ; serial
+        3600 ; refresh
+        900 ; retry
+        1209600 ; expire
+        43200 ; default_ttl
+)
+
+@ IN NS dns.hehe.
+
+8.0.6.c.2.4.e.f.f.f.6.0.4.0.2.0.1.0.0 IN PTR dns.hehe.
+a.c.0.0.2.1.e.f.f.f.6.0.4.0.2.0.0.2.1 IN PTR routeur.hehe.
+

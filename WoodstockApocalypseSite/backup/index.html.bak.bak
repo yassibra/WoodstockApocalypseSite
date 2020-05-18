@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>hehehe</title>
+	<script type="text/javascript">
+		function deroulement(offset){
+			var hist=['Festival de Woodstock, 1969, la fête est finie. Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement. Il tue en quelques heures.',
+				'Les sujets sains ne doivent en aucun cas quitter leur domicile. La police passa quelques heures au festival pour ordonner au mégaphone de ne pas bouger de woodstock. Ils ont malheureusement été dépêchés en ville en n’ayant prévenu que quelques centaines de personnes.',
+				'Des bandits ont vu là l\'occasion de répandre la rumeur selon laquelle il faut aller à la ville la plus proche pour se faire vacciner avant la pénurie, créant un mouvement de foule empechant les voitures de circuler. L\'objectif pour les bandits est clair : voler un véhicule.',
+				'Un photographe du journal Slug-Lines a pris en photo ces bandits de dos sans se douter de ce qu\'ils comptaient faire. On y voit devant la foule partir en ville.',
+				'Sur la photo du journaliste figurent également des indécis. Il s\'agit d\'un groupe de personne qui a décidé de rester dans leur campement à woodstock attendre les autorités.',
+				'Et sur une Ford Fairlane 500 un couple se reposant sereinement, ne réalisant pas la situation à laquelle ils doivent faire face',
+				'Vous etes un festivalier, votre but est de survivre, à vous de choisir votre camp !' ];
+
+			
+			var elem=document.getElementById("parag");
+			var gauche=document.getElementById("gauche");
+			var droit=document.getElementById("droit");
+			var bouton=document.getElementById("boutonCommencer");
+			var classe;
+			if(offset<-1 || offset>1)
+				alert("nikoumouk");
+			else{
+				classe=parseInt(elem.className)+offset;
+				if(classe<hist.length && classe>=0){
+					if(classe==0)
+						gauche.src="img/fleche_gauche_grise.png";
+					else
+						gauche.src="img/fleche_gauche.png";
+					
+					console.log(classe==(hist.length-1));
+
+					if(classe==(hist.length-1)){
+						bouton.href="accueil.html";
+						bouton.style="pointer-events:auto; opacity:1;";
+						droit.src="img/fleche_droite_grise.png";
+						console.log("keske");
+					}
+					else
+						droit.src="img/fleche_droite.png";
+
+					elem.innerHTML=hist[classe];
+					elem.className=classe;
+				}
+			}
+		}
+
+	</script>
+</head>
+<body id="hehehe">
+	<div id="mdrr">
+		<div id="entier">
+			<div id="divIndex">
+				<div id="history" >
+					<h1 id="titre">Penetrez un woodstock apocalyptique</h1>
+						<p class='1' id="parag">Festival de Woodstock, 1969, la fête est finie. Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement. Il tue en quelques heures.</p>
+					<div id="boutons">
+						<a onclick="deroulement(-1)"><img id="gauche" class="lien_pls" src="img/fleche_gauche_grise.png"></a>
+						<a  onclick="deroulement(1)"><img id="droit" class="lien_pls" src="img/fleche_droite.png"></a>
+					</div>
+				</div>
+			</div>
+			<a id="boutonCommencer" style="pointer-events: none;opacity:0.15;" ><p id="demarre">Démarrer votre histoire</p></a>
+		</div>
+	</div>
+</body>
+</html>

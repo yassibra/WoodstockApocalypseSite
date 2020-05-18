@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css"> 
+	<script type="text/javascript">
+		var tabQ1 = [1];
+		var tabQ2 = [1, 2, 3];
+		var i=0;
+		var j=0;
+		function changeText1(){
+			document.getElementById("foule").src =("img/voiture.jpg");
+			document.getElementById("intro").innerHTML = '';
+			document.getElementById("quest1").innerHTML = '';
+			i++;
+			if(i==1){
+				document.getElementById("quest1").innerHTML = '1. Rendre la voiture';
+				document.getElementById("intro").innerHTML = 'Des campeurs vous ont repérés, <br>vous pouvez rendre la voiture pour éteindre<br> tout soupçon ou vous enfuir.';
+			}
+			if(i==2)
+				document.location.href="mort.html"
+
+			j++;
+			if(j==1){
+				document.getElementById("quest2").innerHTML = '2. S\'enfuir avec la voiture';
+			}
+		}
+
+		function reboot(){
+			document.getElementById("foule").src =("img/imgfoule.jpg");
+			document.getElementById("intro").innerHTML = 'Vous incarnez un groupe parmis la foule, votre but est de survivre.';
+			document.getElementById("quest").innerHTML = 'Que choisissez-vous de faire ?';
+			document.getElementById("quest2").innerHTML = '2. Courir vers la ville la plus proche';
+			i=0;
+			j=0;
+		}
+
+	</script>
+<body id="hehehe">
+<div style="text-align: center; font-size: 25px">
+    <img src="img/imgfoule.jpg" style="width: 800px; height: 400px; margin: auto; border-top: 5px solid #E3A300; border-bottom: 5px solid #e3b600" id="foule">
+    <p id="intro">Vous incarnez un groupe parmis la foule,<br>votre but est de survivre.</p>
+    <p id="quest" style="margin-top: 80px">Que choisissez-vous de faire ?</p><br>
+    <p onclick="changeText1()" class="question" id="quest1">1. Voler une voiture</p>
+    <p onclick="changeText1()" class="question" id="quest2">2. Courir vers la ville la plus proche</p>
+    <div>
+   
+   		<p id="give" style="display: inline-block; margin-top: 100px" onclick="reboot()">revenir au choix précédent</p>
+    	<p><a id="give" href="accueil.html">abandonner</p></a>
+  		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>Woodstock Apocalypse - Accueil</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function deroulement(offset){
+			var hist=['Festival de Woodstock, 1969, la fête est finie.<br/><br/>Une épidémie a envahi le continent américain à une vitesse exponentielle, il s\'agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement. Il tue en quelques heures.<br/><br/>Les forces de l\'ordre ordonnèrent au mégaphone de rester à woodstock.',
+				'Les forces de l\'ordre n\'ont pas eu le temps de donner l\'ordre de rester à tout le monde, ayant été dépéchés en ville.<br/><br/>Des bandits en ont profité pour répandre la rumeur selon laquelle il faut aller à la ville la plus proche pour se faire vacciner avant la pénurie.<br/><br/>Alors qu\'une foule se rendait en ville, un groupe décida de camper en attendant les autorités et un couple restait dormir sur sa voiture.',
+				'Vous êtes un festivalier, votre but est de survivre, à vous de choisir votre camp !<br/><br/>Règles du jeu : vous devez choisir une équipe puis décider de leurs actions.<br/><br/>Vous avez le droit d\'annuler une (et une seule) action avec votre joker avant que mort n\'advienne.<br/><br/>Chanson en fond : "Day song" de Sweetwater' ];
+
+			
+			var elem=document.getElementById("parag");
+			var gauche=document.getElementById("gauche");
+			var droit=document.getElementById("droit");
+			var bouton=document.getElementById("boutonCommencer");
+			var classe;
+			if(offset<-1 || offset>1)
+				alert("nikoumouk");
+			else{
+				classe=parseInt(elem.className)+offset;
+				if(classe<hist.length && classe>=0){
+					if(classe==0){
+						gauche.style="opacity:0.3";
+						gauche.src="img/fleche_gauche_grise.png";
+						gauche.className="lien_pls_inac";
+					}
+					else{
+						gauche.style="opacity:1";
+						gauche.src="img/fleche_gauche.png";
+						gauche.className="lien_pls";
+					}
+					
+					console.log(classe==(hist.length-1));
+
+					if(classe==(hist.length-1)){
+						droit.style="opacity:0.3";
+						bouton.href="accueil.html";
+						bouton.style="pointer-events:auto; opacity:1;";
+						droit.src="img/fleche_droite_grise.png";
+						droit.className="lien_pls_inac";
+					}
+					else{
+						droit.style="opacity:1";
+						droit.src="img/fleche_droite.png";
+						droit.className="lien_pls";
+					}
+
+					elem.innerHTML=hist[classe];
+					elem.className=classe;
+				}
+			}
+		}
+
+	</script>
+</head>
+<audio style="display:none;" controls autoplay="">
+  <source src="audio/day-song-remastered-version.mp3" type="audio/mpeg">
+</audio>
+<body id="hehehe">
+	<div id="mdrr">
+		<div id="entier">
+			<div id="divIndex">
+				<div id="history" >
+					<h1 id="titre">Pénétrez un woodstock apocalyptique</h1>
+						<p class='0' id="parag">Festival de Woodstock, 1969, la fête est finie.<br/><br/>Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement. Il tue en quelques heures.<br/><br/>Les forces de l'ordre ordonnèrent au mégaphone de rester de woodstock.</p>
+					<div id="boutons">
+						<a onclick="deroulement(-1)"><img id="gauche" style="opacity: 0.3" class="lien_pls_inac" src="img/fleche_gauche_grise.png"></a>
+						<a  onclick="deroulement(1)"><img id="droit" class="lien_pls" src="img/fleche_droite.png"></a>
+					</div>
+				</div>
+			</div>
+			<a id="boutonCommencer" style="pointer-events: none;opacity:0.15;" ><p id="demarre">Démarrer votre histoire</p></a>
+		</div>
+	</div>
+</body>
+</html>

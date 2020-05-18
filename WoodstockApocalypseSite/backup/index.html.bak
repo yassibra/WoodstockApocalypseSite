@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>hehehe</title>
+	<script type="text/javascript">
+		function avancer(){
+			var hist0='Festival de Woodstock, 1969, la fête est finie. Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement.';
+			var hist1='Les sujets sains doivent rester en quarantaine pour ne pas être contaminés. La police passe donc quelques heures au festival pour ordonner au mégaphone de rester à woodstock. Malheureusement, ils ont vite été dépêchés en ville en n’ayant prévenu que quelques milliers de personnes.';
+			var hist2='Ce qui a laissé l’opportunité à des bandits de propager une fausse instruction. Les deux personnes décontractés que nous voyons sur la gauche de la photo sont les instigateurs de la pagaille, ils ont fait croire à la population qu’il faut se diriger vers la ville la plus proche pour se faire vacciner, et y ont ajouté un facteur panique en laissant croire à une pénurie.';
+			var hist3='95 % des personnes croient en la rumeur, ils se rendent donc à la ville la plus proche. Et les autres restent, car ils n\'y croient pas une seule seconde.';
+			var elem=document.getElementById("parag");
+			if(elem.className=='1'){
+				elem.innerHTML=hist1;
+				elem.className='2';
+				console.log(elem.className);
+			}
+			else if(elem.className=='2'){
+				elem.innerHTML=hist2;
+				elem.className='3';
+				console.log(elem.className);
+			}
+			else if(elem.className=='3'){
+				elem.innerHTML=hist3;
+				elem.className='4';
+			}
+			else if(elem.className=='4'){
+				elem.innerHTML=hist0;
+				elem.className='1';
+			}
+		}
+
+		function reculer(){
+			var hist0='Festival de Woodstock, 1969, la fête est finie. Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement.';
+			var hist1='Les sujets sains doivent rester en quarantaine pour ne pas être contaminés. La police passe donc quelques heures au festival pour ordonner au mégaphone de rester à woodstock. Malheureusement, ils ont vite été dépêchés en ville en n’ayant prévenu que quelques milliers de personnes.';
+			var hist2='Ce qui a laissé l’opportunité à des bandits de propager une fausse instruction. Les deux personnes décontractés que nous voyons sur la gauche de la photo sont les instigateurs de la pagaille, ils ont fait croire à la population qu’il faut se diriger vers la ville la plus proche pour se faire vacciner, et y ont ajouté un facteur panique en laissant croire à une pénurie.';
+			var hist3='95 % des personnes croient en la rumeur, ils se rendent donc à la ville la plus proche. Et les autres restent, car ils n\'y croient pas une seule seconde.';
+			var elem=document.getElementById("parag");
+			if(elem.className=='3'){
+				elem.innerHTML=hist1;
+				elem.className='2';
+			}
+			else if(elem.className=='4'){
+				elem.innerHTML=hist2;
+				elem.className='3';
+			}
+			else if(elem.className=='1'){
+				elem.innerHTML=hist3;
+				elem.className='4';
+			}
+			else if(elem.className=='2'){
+				elem.innerHTML=hist0;
+				elem.className='1';
+			}
+		}
+	</script>
+</head>
+<body id="hehehe">
+	<div id="mdrr">
+		<div id="entier">
+			<div id="divIndex">
+				<div id="history" >
+					<h1 id="titre">Penetrez un woodstock apocalyptique</h1>
+						<p class='1' id="parag">Festival de Woodstock, 1969, la fête est finie. Une épidémie a envahi le continent américain à une vitesse exponentielle, il s’agit d’un virus nouveau qui se propage par la respiration et qui résiste à tout traitement.</p>
+					<div id="boutons">
+						<a onclick="reculer()"><img id="lien_pls" src="img/fleche_gauche.png"></a>
+						<a onclick="avancer()"><img id="lien_pls" src="img/fleche_droite.png"></a>
+					</div>
+				</div>
+			</div>
+			<a href="accueil.html" ><p id="demarre">Démarrer votre histoire</p></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Woodstock Apocalypse - Bandits</title>
+	<meta charset="utf-8"/>
+	<link href="css/styleHist.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<script src="js/histoire.js"></script>
+</head>
+<body>
+	<!--audio id="audioVictoire" style="display:none;" controls>
+  		<source src="audio/at-the-hop.mp3" type="audio/mpeg">
+	</audio-->
+	<!--audio id="audioDefaite" style="display:none;" controls>
+  		<source src="audio/richie-havens-from-the-prison.mp3" type="audio/mpeg">
+	</audio-->
+	<div id="mdr">
+		<img id="image1" class="image" src="img/starsky_hutch_cropped.png">
+		<img id="image2" class="image" src="img/starsky_hutch_cropped.png">
+		<video style="display:none" id="video1" src="video/at-the-hop.mp4" loop>
+    	</video>
+    	<video style="display:none" id="video2" src="video/at-the-hop.mp4" loop>
+    	</video>
+
+		<p id="agrandir">Agrandir la page</p>
+		<div id="appli" class="0">
+			<p id="histoire" class="0">John (à gauche) et Edward (à droite) voient que le plan a fonctionné, ils veulent maintenant en tirer des bénéfices, que faire :</p>
+			<div id="questions">
+				<p onclick="histoire('d',1)" id="question1" class="question">1. Voler un camion</p>
+				<div id="trait"></div>
+				<p onclick="histoire('d',2)" id="question2" class="question">2. Voler une voiture de sport</p>
+				<p id="end" class="0"></p>
+				<p id="source" style="display:none;"></p>
+			</div>
+			<div id="controleur">
+				<div id="controleurSousDiv">
+					<a id="recommencer" onmouseover="replace('recommencerImg', 'img/fleche_restart_bleu.png');" onmouseout="replace('recommencerImg', 'img/fleche_restart_blanche.png');" style="opacity:0.8" href="accueil.html"><img id="recommencerImg" src="img/fleche_restart_blanche.png"/ alt="bouton recommencer"><span>Retour à l'accueil</span></a>
+					<div id="retour" class="enabled" onmouseover="replace('imgretour', 'img/fleche_annuler_bleu.png');" onmouseout="replace('imgretour', 'img/fleche_annuler_blanche.png');" onclick="histoire('d',-1)" ><img id="imgretour" src="img/fleche_annuler_blanche.png" alt="fleche retour"/><p>JOKER<span style="font-size:0.8em;" id="joker" class="1"></span></p></div>
+					<p id="messageJoker" class="1">Vous pouvez annuler une action à tout moment avec votre joker avant que mort n'advienne !</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

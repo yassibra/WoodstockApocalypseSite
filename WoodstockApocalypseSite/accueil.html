@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Woodstock Apocalypse - Choix</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function changeP(a){
+			if(a==1){
+				document.getElementById("ssou").innerHTML="LA FOULE";
+				document.getElementById("pHistoire").innerHTML="Prenez la place d'un festivalier qui a décidé de suivre la foule vers la ville la plus proche (choisissez les bandits pour la démo)";
+			}
+			else if(a==2){
+				document.getElementById("ssou").innerHTML="LES CAMPEURS";
+				document.getElementById("pHistoire").innerHTML='Incarnez un campeur qui a décidé avec son groupe de camper en attendant les autorités (choisissez les bandits pour la démo)';
+			}
+			else if(a==3){
+				document.getElementById("ssou").innerHTML="LES BANDITS";
+				document.getElementById("pHistoire").innerHTML='Vous incarnez Edward et John, les deux bandits qui ont répandu la rumeur sur le vaccin et qui ont pour objectif de voler un maximum de biens.';
+			}
+			else if(a==4){
+				document.getElementById("ssou").innerHTML="LE COUPLE";
+				document.getElementById("pHistoire").innerHTML='Entrez dans la peau de Philip et Jane : un paisible couple se reposant du festival (choisissez les bandits pour la démo)';
+			}
+			else if (a==5){
+				document.getElementById("ssou").innerHTML="CHOISISSEZ VOTRE GROUPE";
+				document.getElementById("pHistoire").innerHTML='Le virus et la rumeur se propage.<br/><br/>Incarnez chacun de ces groupes et tentez de survivre ! (choisissez les bandits pour la démo)';
+			}
+		}
+
+		function changeClasse(id1, id2, id3, classe){
+			var elem1=document.getElementById(id1);
+			var elem2=document.getElementById(id2);
+			var elem3=document.getElementById(id3);
+			elem1.className=classe;
+			elem2.className=classe;
+			elem3.className=classe;
+		}
+	</script>
+<body id="hehehe">
+	<a href="index.html" id="retourIndex">Retour à l'histoire</a>
+    <div id="iss" >
+    	<h1 id="ssou">CHOISISSEZ VOTRE GROUPE</h1>
+    	<table>
+	    	<tr>
+			  	<td id="groupe1" class="group" onmouseover="changeClasse('groupe2', 'groupe3', 'groupe4', 'groupNonHover');" onmouseout="changeClasse('groupe2', 'groupe3', 'groupe4', 'group');"><a href="histoireA.html"><img src="img/foule.jpg" alt="" onmouseover="changeP(1)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			  	<td id="groupe2" class="group" onmouseover="changeClasse('groupe1', 'groupe3', 'groupe4', 'groupNonHover');" onmouseout="changeClasse('groupe1', 'groupe3', 'groupe4', 'group');"><a href="histoireB.html"><img src="img/campeur.jpg" alt="" onmouseover="changeP(2)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			</tr>
+		</table>
+		<table id="tableOKLM">
+			<tr>
+				<td id="groupe3" class="group" onmouseover="changeClasse('groupe2', 'groupe1', 'groupe4', 'groupNonHover');" onmouseout="changeClasse('groupe2', 'groupe1', 'groupe4', 'group');"><a href="histoireD.html"><img src="img/bandit.jpg" alt="" onmouseover="changeP(3)" onmouseleave="changeP(5)" class="imggg"></a></td>
+	  			<td id="groupe4" class="group" onmouseover="changeClasse('groupe2', 'groupe3', 'groupe1', 'groupNonHover');" onmouseout="changeClasse('groupe2', 'groupe3', 'groupe1', 'group');"><a href="histoireC.html"><img src="img/coupleVoiture.jpg" alt="" onmouseover="changeP(4)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			</tr>
+		</table>
+    	<p id="pHistoire">Un virus contagieux et mortel se propage. Incarnez chacun de ses groupes et tentez de survivre.</p>
+    </div>
+</body>
+</html>

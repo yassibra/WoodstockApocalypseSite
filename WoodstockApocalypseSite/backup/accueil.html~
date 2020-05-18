@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function changeP(a){
+			if(a==1){
+				document.getElementById("ssou").innerHTML="Groupe A";
+				document.getElementById("pHistoire").innerHTML="Des rumeurs ont été profilé par les bandits. Un virus contagieux et mortel se propage et des bandits ont indiqué qu'il y avait des remèdes à la ville la plus proche. Vous allez incarner la foule qui écoute les fausses informations.<br><br><mark>Cliquez sur l'image du groupe A pour commencer l'histoire</mark>";
+			}
+			else if(a==2){
+				document.getElementById("ssou").innerHTML="Groupe B + *HISTOIRE*";
+				document.getElementById("pHistoire").innerHTML='';
+			}
+			else if(a==3){
+				document.getElementById("ssou").innerHTML="Groupe C + *HISTOIRE*";
+				document.getElementById("pHistoire").innerHTML='';
+			}
+			else if(a==4){
+				document.getElementById("ssou").innerHTML="Groupe D + *HISTOIRE*";
+				document.getElementById("pHistoire").innerHTML='';
+			}
+			else if (a==5){
+				document.getElementById("ssou").innerHTML="Choisissez votre groupe";
+				document.getElementById("pHistoire").innerHTML='Un virus contagieux et mortel se propage. Vous allez incarner chacun des groupes pour tanter de survivre.';
+			}
+		}
+
+	</script>
+<body id="hehehe">
+    <div id="iss" >
+    	<h1 id="ssou">Choisissez votre groupe</h1><br/>
+    	<table>
+	    	<tr>
+			  	<td id="groupe1" ><a href="histoire.html"><img src="img/foule.jpg" alt="" onmouseover="changeP(1)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			  	<td id="groupe2" ><a href="histoire.html"><img src="img/campeur.jpg" alt="" onmouseover="changeP(2)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td id="groupe3" ><a href="histoire.html"><img src="img/bandit.jpg" alt="" onmouseover="changeP(3)" onmouseleave="changeP(5)" class="imggg"></a></td>
+	  			<td id="groupe4" ><a href="histoire.html"><img src="img/coupleVoiture.jpg" alt="" onmouseover="changeP(4)" onmouseleave="changeP(5)" class="imggg"></a></td>
+			</tr>
+		</table>
+        <!--<a href="histoire.html"><img src="img/foule.jpg" alt="" onmouseover="changeP(1)" onmouseleave="changeP(5)" class="imggg"></a>
+        <a href="histoire.html"><img src="img/campeur.jpg" alt="" onmouseover="changeP(2)" class="imggg"></a>
+        <p></p>
+        <a href="histoire.html"><img src="img/bandit.jpg" alt="" onmouseover="changeP(3)" class="imggg"></a>
+        <a href="histoire.html"><img src="img/coupleVoiture.jpg" alt="" onmouseover="changeP(4)" class="imggg"></a>
+        <div style="display: block">-->
+    		<p id="pHistoire">Un virus contagieux et mortel se propage. Vous allez incarné chacun des groupes pour tanter de survivre.</p>
+    	</div>
+    </div>
+</body>
+</html>
